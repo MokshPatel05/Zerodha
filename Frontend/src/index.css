@@ -7,4 +7,54 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.btn-primary {
+  background-color: #387ED1;
+  padding: 0.6rem 0;
+}
+
+.nav-link {
+  margin-left: 2rem;
+  font-size: 0.87rem;
+  color: grey !important;
+}
+
+.stateCont{
+  margin-bottom: 2rem;
+}
+
+.oa-container {
+  margin-top: 2rem;
+}
+
+.footer-rights{
+  margin-top: 0.6rem;
+  color: gray;
+  font-size: 0.9rem;
+}
+.footer-cont{
+  background-color: #FBFBFB;
+  padding:2.5rem 20rem;
+}
+.Social-Links i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  color: #666666;
+}
+.footer-links a{
+  text-decoration: none;
+  color: #5a5757;
+  font-family: sans-serif;
+}
+.footer-links{
+  margin-bottom: 3rem;
+}
+
+.footer-p{
+  font-size: 0.7rem;
+  color: #a9a5a5;
+  font-family: sans-serif;
+  word-spacing: 0.1rem;
 }
