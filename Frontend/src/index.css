@@ -58,3 +58,10 @@
   font-family: sans-serif;
   word-spacing: 0.1rem;
 }
+.para-space{
+  line-height: 1.8rem;
+  font-weight: 480;
+}
+.para-space a {
+  text-decoration: none;
+}
