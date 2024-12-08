@@ -11,7 +11,7 @@
 }
 
 .btn-primary {
-  background-color: #387ED1;
+  background-color: #387ed1;
   padding: 0.6rem 0;
 }
 
@@ -21,7 +21,7 @@
   color: grey !important;
 }
 
-.stateCont{
+.stateCont {
   margin-bottom: 2rem;
 }
 
@@ -29,39 +29,65 @@
   margin-top: 2rem;
 }
 
-.footer-rights{
+.footer-rights {
   margin-top: 0.6rem;
   color: gray;
   font-size: 0.9rem;
 }
-.footer-cont{
-  background-color: #FBFBFB;
-  padding:2.5rem 20rem;
+.footer-cont {
+  background-color: #fbfbfb;
+  padding: 2.5rem 20rem;
 }
 .Social-Links i {
   font-size: 1.2rem;
   margin-right: 1rem;
   color: #666666;
 }
-.footer-links a{
+.footer-links a {
   text-decoration: none;
   color: #5a5757;
   font-family: sans-serif;
 }
-.footer-links{
+.footer-links {
   margin-bottom: 3rem;
 }
 
-.footer-p{
+.footer-p {
   font-size: 0.7rem;
   color: #a9a5a5;
   font-family: sans-serif;
   word-spacing: 0.1rem;
 }
-.para-space{
+.para-space {
   line-height: 1.8rem;
   font-weight: 480;
 }
 .para-space a {
   text-decoration: none;
+}
+#supportHero {
+  color: white;
+  font-family: sans-serif;
+  background-color: #387ed1;
+}
+#supportHero a {
+  color: white;
+  text-decoration: underline;
+
+}
+#supportWrapper {
+  display: flex;
+  justify-content:space-between;
+  margin: 0 13rem;
+}
+#supportHero input{
+  padding: 0.9rem 10rem;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+.col-6>a{
+  margin: 1rem 2rem 0 0;
 }

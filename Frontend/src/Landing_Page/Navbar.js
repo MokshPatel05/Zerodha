@@ -28,27 +28,27 @@ function Navbar() {
           <form class="d-flex" role="search">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to='signup'>
+                <Link class="nav-link active" aria-current="page" to="/signup">
                   Signup
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to='about'>
+                <Link class="nav-link active" aria-current="page" to="/about">
                   About
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to="product">
+                <Link class="nav-link active" aria-current="page" to="/product">
                   Products
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to="pricing">
+                <Link class="nav-link active" aria-current="page" to="/pricing">
                   Pricing
                 </Link>
               </li>
               <li class="nav-item text-muted">
-                <Link class="nav-link active" aria-current="page" to="support">
+                <Link class="nav-link active" aria-current="page" to="/support">
                   Support
                 </Link>
               </li>
