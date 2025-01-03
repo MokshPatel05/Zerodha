@@ -1,12 +1,20 @@
 require("dotenv").config(); //this will config .env variable to process an dfurther we can use them by "process.env.<var_name>"
 const express = require("express");
+const bodyParser = require("body-parser");
+const cors = require("cors");
 const { default: mongoose } = require("mongoose");
 const app = express();
 const port = process.env.PORT || 8080;
 const URL = process.env.MONGO_URL;
 
+app.use(cors());
+app.use(bodyParser.json());
+
 const { HoldingsModel } = require("./model/HoldingsModel");
 const { PositionsModel } = require("./model/PositionsModel");
+const { OrdersModel } = require("./model/OrdersModel");
+
+//main method to connect database
 async function main() {
   await mongoose.connect(URL);
 }
@@ -56,6 +64,7 @@ main()
 //   });
 //   res.send("Done !");
 // });
+
 // app.get("/addHoldings", async (req, res) => {
 //   let tempHoldings = [
 //     {
@@ -169,7 +178,7 @@ main()
 //     },
 //   ];
 //   tempHoldings.forEach((item) => {
-    // let newHolding = new HoldingsModel({
+//   let newHolding = new HoldingsModel({
 //       name: item.name,
 //       qty: item.qty,
 //       avg: item.avg,
@@ -181,6 +190,29 @@ main()
 //   });
 //   res.send("Done !");
 // });
+
+app.get("/allHoldings", async (req, res) => {
+  const allHoldings = await HoldingsModel.find({});
+  res.json(allHoldings);
+});
+
+app.get("/allPositions", async (req, res) => {
+  const allPositions = await PositionsModel.find({});
+  res.json(allPositions);
+});
+
+app.post("/newOrder", async (req, res) => {
+  let newOrder = new OrdersModel({
+    name: req.body.name,
+    qty: req.body.qty,
+    price: req.body.price,
+    mode: req.body.mode,
+  });
+
+  newOrder.save();
+  res.send("Order Placed");
+});
+
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
