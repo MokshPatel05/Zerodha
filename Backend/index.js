@@ -1,4 +1,8 @@
-require("dotenv").config(); //this will config .env variable to process an dfurther we can use them by "process.env.<var_name>"
+//implimentation remaining :
+// 1. If you add orders then it will reflect it in holding or positions.
+// 2. Authentication and Authorisation (use jwt token , link : "https://www.freecodecamp.org/news/how-to-secure-your-mern-stack-application/") 
+
+require("dotenv").config(); //this will config .env variable to process an further we can use them by "process.env.<var_name>"
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
